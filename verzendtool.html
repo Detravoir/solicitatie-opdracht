@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Verzendtool</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Verzendlabel & Pakbon Generator</h1>
+   <form action="process_order.php" method="POST">
+      <label for="order">Ordernummer:</label>
+      <input type="text" id="order" name="order" value="#958201" required>
+      
+      <label for="product">Verzendproduct:</label>
+      <select id="product" name="product" required>
+         <option value="2">DHL Pakje (NL)</option>
+      </select>
+      
+      <button type="submit">Verzenden</button>
+   </form>
+</body>
+</html>
